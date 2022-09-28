@@ -1,0 +1,52 @@
+@import "../../../UI/styles/mixins";
+
+.optionInput {
+  width: 100%;
+  margin: 2.5rem 0;
+  position: relative;
+
+  @include respond(phone) {
+    width: 65%;
+    margin: 1.5rem 0;
+  }
+
+  label {
+    color: var(--color-gray-2);
+    font-size: 1.5rem;
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+  }
+
+  select {
+    option {
+      color: var(--color-black);
+      background: var(--color-gray-1);
+    }
+  }
+
+  &__input {
+    color: var(--color-gray-2);
+    font-size: 1.5rem;
+    border: 3px solid var(--color-gray-2);
+    font-family: Roboto-Medium;
+    background: var(--color-gray-1);
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    margin: 0.25rem;
+    cursor: pointer;
+
+    @include respond(phone) {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

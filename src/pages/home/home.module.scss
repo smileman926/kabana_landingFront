@@ -1,0 +1,184 @@
+@import "../../UI/styles/mixins";
+@import "../../UI/styles/animations";
+
+.home {
+  width: 100%;
+
+  // @include respond(phone) {
+  //   padding: 2rem 0;
+  // }
+
+  &__cloud1 {
+    position: absolute;
+    width: 1292px;
+    height: 727px;
+    left: 103px;
+    top: 53px;
+
+    background: url(../../assets/images/cloud2.svg);
+  }
+  &__cloud2 {
+    position: absolute;
+    // width: 1340px;
+    width: 1320px;
+    height: 700px;
+    // left: 105px;
+    right: 0;
+    top: 85px;
+
+    background: url(../../assets/images/cloud3.svg);
+  }
+  &__cloud3 {
+    position: absolute;
+    width: 1428px;
+    height: 768px;
+    left: 0px;
+    top: 33px;
+
+    background: url(../../assets/images/cloud22.svg);
+  }
+  &__cloud4 {
+    position: absolute;
+    width: 1277px;
+    height: 719px;
+    // left: 204px;
+    right: 0;
+
+    top: 57px;
+
+    background: url(../../assets/images/cloud31.svg);
+  }
+
+  &__tunam1 {
+    // position: absolute;
+    // width: 1277px;
+    // height: 719px;
+    // right: 0;
+    // top: 57px;
+
+    position: absolute;
+    width: 100%;
+    height: 32rem;
+    margin-top: 40rem;
+
+    animation: floatTwo 7s ease-in-out infinite;
+
+    background-image: url(../../assets/images/tunam1.png);
+    background-size: cover;
+  }
+
+  &__ellipse3 {
+    position: absolute;
+    width: 646px;
+    height: 559px;
+    left: -246px;
+    top: 460px;
+
+    background: rgba(69, 5, 91, 0.75);
+    filter: blur(250px);
+  }
+  &__ellipse4 {
+    position: absolute;
+    width: 500px;
+    height: 1587px;
+    // left: 1187.67px;
+    right: 150px;
+
+    top: 1500px;
+
+    background: rgba(69, 5, 91, 0.75);
+    filter: blur(250px);
+    transform: rotate(10.63deg);
+  }
+  &__ellipse5 {
+    position: absolute;
+    width: 1225.36px;
+    height: 1780.81px;
+    top: 450rem;
+
+    background: rgba(69, 5, 91, 0.75);
+    filter: blur(250px);
+    transform: matrix(-0.98, -0.18, -0.18, 0.98, 0, 0);
+  }
+
+  &__island1 {
+    width: 85%;
+    position: absolute;
+    margin-top: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: float 6s ease-in-out infinite;
+
+    &_button {
+      position: absolute;
+      margin: 42rem 0 0 24rem;
+
+      cursor: pointer;
+
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__island2 {
+    // width: 100%;
+    position: absolute;
+    // margin-top: 8rem;
+    top: 24rem;
+    left: 19rem;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: floatTwo 5s ease-in-out infinite;
+
+    &_button {
+      position: absolute;
+      margin: 15rem 0 0 0;
+
+      cursor: pointer;
+
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__island3 {
+    // width: 85%;
+    position: absolute;
+    top: 20rem;
+    right: 18rem;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: floatTwo 4s ease-in-out infinite;
+
+    &_button {
+      position: absolute;
+      margin: 24rem 0 0 0;
+
+      cursor: pointer;
+
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__articles {
+    position: absolute;
+    margin: 90rem 0 0 0;
+    width: 100%;
+  }
+}

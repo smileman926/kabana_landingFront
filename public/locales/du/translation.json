@@ -1,0 +1,21 @@
+{
+  "connectWallet": "WALLET VERBINDEN",
+  "home": "HEIMAT",
+  "docs": "DOKUMENTE",
+  "team": "MANNSCHAFT",
+  "KabanaClub": "Kabana Club",
+  "KabanaClubDescription": "Ein geschlossener Krypto-Club mit eigenem Ökosystem, in dem derzeit 3 ​​Smart Contracts interagieren. Unser Club ist ein idealer Ort für alle, die sich für die Entwicklung in der Welt von Krypto, NFT und Blockchain im Allgemeinen interessieren. Kabana Club-Mitglieder haben die Möglichkeit, ihre Projekte über unseren Projekt-Inkubator zu erstellen und zu starten.",
+  "collectionOfNFTMushrooms": "Sammlung von NFT-Pilzen",
+  "collectionOfNFTMushroomsDescription": "4444 NFTs, von denen jeder einen Schlüssel zum privaten Club „Miner“ hat, der einen Spieltoken schürft.",
+  "gameToken": "Spieltoken",
+  "gameTokenDescription": "Der Smart Contract ERC20 basiert auf der Polygon-Blockchain. Es hat eine begrenzte Emission ohne die Möglichkeit einer Münze.",
+  "howTheMining": "wie der Abbau einer Mine berechnet wird",
+  "howTheMiningDescription": "1 NFT pro Tag (24h) ergibt 444 Spielmarken Es gibt keine Begrenzung für den NFT-Einsatz. Sie können für mehrere Mushrooms minen, jeder Mushroom baut 444 Token pro Tag ab. Selbst wenn alle 4444 Pilze im Steak sind, wird es ungefähr 15 Jahre dauern, bis der Mine die Token vollständig ausgehen. Wir sind uns bewusst, dass dies niemals der Fall sein wird wird nicht passieren, also wird das ungefähre Alter der Mine, wenn sie leer ist, ~ 20 Jahre betragen.",
+  "token": "ZEICHEN",
+  "tokenDescription": "- KABANA-CLUB-MÜNZE  Rolle in Closed Discord  Bestehen Sie alle Tests des Spiels  Zugriff auf die ursprüngliche Informationsquelle  Einzigartiger Avatar im Spiel (nach Veröffentlichung)",
+  "mine": "Mine",
+  "mineDescription": "Ein intelligenter Vertrag, der Token für jeden eingesetzten NFT-Pilz ausgibt, d.h. NFTs werden unermüdlich für Sie arbeiten und den Spieltoken abbauen.",
+  "gamingSmartContract": "Gaming Smart Contract",
+  "gamingSmartContractDescription": "um den Gewinner zu ermitteln und ihn zu belohnen nimmt 2 gleiche Wetten auf sich, schickt 90% des Gewinns an den Gewinner und verbrennt 10% aus dem Umlauf. Der ERC20-Spiel-Token wird auf der Polygon-Blockchain erstellt und hat ein begrenztes Angebot ohne die Möglichkeit einer Prägung.",
+  "ourTeam": "НАША КОМАНДА"
+}

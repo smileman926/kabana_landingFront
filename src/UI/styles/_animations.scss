@@ -1,0 +1,23 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px) translateX(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes floatTwo {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(15px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "connectWallet": "CONNECT WALLET",
+  "home": "HOME",
+  "docs": "DOCS",
+  "team": "TEAM",
+  "KabanaClub": "Kabana Club",
+  "KabanaClubDescription": "A closed crypto club with its own ecosystem, in which, at the moment, 3 smart contracts interact. Our club is an ideal place for everyone who is interested in the development in the world of crypto, NFT and blockchain in general. Kabana Club members have the opportunity to create and launch their projects through our project incubator.",
+  "collectionOfNFTMushrooms": "Collection of NFT-mushrooms",
+  "collectionOfNFTMushroomsDescription": "4444 NFTs, each of which has: a key to the private club “miner”, which mines a game token.",
+  "gameToken": "Game token",
+  "gameTokenDescription": "The ERC20 smart contract is based on the Polygon blockchain. It has a limited emission without the possibility of a mint.",
+  "howTheMining": "how the mining of a mine is calculated",
+  "howTheMiningDescription": "1 NFT per day (24h) will produce 444 game tokens There is no limit for NFT stake. You can stake in mining for several mushrooms, each mushroom mines 444 tokens per day. even if all 4444 mushrooms are in the steak, it will take about 15 years for the mine to completely run out of tokens. we are well aware that this will never will not happen, so the approximate age of the mine when it is empty will be ~ 20 years.",
+  "token": "TOKEN",
+  "tokenDescription": "- KABANA CLUB COIN  Role in Closed Discord  Pass through all tests of the game Access to the original source of information  Unique in-game avatar (after release)",
+  "mine": "Mine",
+  "mineDescription": "A smart contract that will issue tokens for each staked NFT mushroom, i.e. NFTs will work tirelessly for you and mine the game token.",
+  "gamingSmartContract": "Gaming Smart Contract",
+  "gamingSmartContractDescription": "to identify the winner and reward him takes 2 equal bets on itself, sends 90% of the winnings to the winner and burns 10% from circulation.  The ERC20 game token is created on the Polygon blockchain and has a limited supply without the possibility of a mint.",
+  "ourTeam": "OUR TEAM"
+}
