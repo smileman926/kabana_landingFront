@@ -1,3 +1,5 @@
+@import "../../UI/styles/mixins";
+
 .article {
   width: 100%;
   // min-height: 50rem;
@@ -10,8 +12,18 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(phone) {
+    padding: 2rem 3.5rem;
+    margin: 2rem 0;
+    height: unset;
+  }
+
   &:hover .flip_card_inner {
     transform: rotateY(180deg);
+
+    @include respond(phone) {
+      transform: none;
+    }
   }
 
   &__image {
@@ -23,9 +35,22 @@
 
     img {
       height: 45rem;
+
+      border-radius: 3rem;
+
+      @include respond(phone) {
+        height: 12rem;
+      }
     }
 
     .flip_card {
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      perspective: 2000px;
+    }
+
+    .flip_card_fixed {
       background-color: transparent;
       width: 100%;
       height: 100%;
@@ -41,8 +66,27 @@
       transform-style: preserve-3d;
     }
 
+    .flip_card_inner_fixed {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
     .flip_card:hover .flip_card_inner {
       transform: rotateY(180deg);
+      @include respond(phone) {
+        transform: none;
+      }
+    }
+
+    .flip_card_fixed:hover .flip_card_inner_fixed {
+      // transform: none;
+      @include respond(phone) {
+        transform: none;
+      }
     }
 
     .flip_card_front,
@@ -85,11 +129,31 @@
     // font-family: roboto-medium;
     font-family: "Tuffy";
 
+    @include respond(phone) {
+      line-height: 20px;
+    }
+
     &_title {
       font-size: 3.5rem;
     }
     &_des {
       font-size: 2.5rem;
+    }
+    @include respond(phone) {
+      &_title {
+        width: 100%;
+        text-align: start;
+
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+      &_des {
+        width: 100%;
+        text-align: start;
+        font-size: 1.1rem;
+
+        white-space: pre-line;
+      }
     }
   }
 }

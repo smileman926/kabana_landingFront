@@ -27,17 +27,19 @@ const TopNav = () => {
       </div>
       <div className={classes.topNav__wallet}>
         {/* <WalletButton>CONNECT WALLET</WalletButton> */}
-        <OptionInput
-          key={"BrokerBranch"}
-          options={topNavConstants.languageOptions}
-          onPushValue={handleLanguage}
-          //   value={enteredBrokerBranchId}
-          //   placeholder={""}
-          //   id={"BrokerBranch"}
-          style={{
-            width: "30%",
-          }}
-        />
+        <div className={classes.topNav__wallet_language}>
+          <OptionInput
+            key={"BrokerBranch"}
+            options={topNavConstants.languageOptions}
+            onPushValue={handleLanguage}
+            //   value={enteredBrokerBranchId}
+            //   placeholder={""}
+            //   id={"BrokerBranch"}
+            style={{
+              width: "30%",
+            }}
+          />
+        </div>
         <WalletButton>{t("connectWallet")}</WalletButton>
       </div>
     </div>

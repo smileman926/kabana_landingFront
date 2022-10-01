@@ -1,3 +1,5 @@
+@import "../../UI/styles/mixins";
+
 .topNav {
   position: absolute;
   width: 100%;
@@ -8,10 +10,14 @@
   justify-content: center;
 
   margin-top: 3rem;
-
   padding: 0 4rem;
 
   z-index: 1;
+
+  @include respond(phone) {
+    margin-top: 0;
+    padding: 1rem 0.5rem;
+  }
 
   &__logo {
     width: 33%;
@@ -19,18 +25,16 @@
     align-items: center;
     justify-content: flex-start;
 
-    // -webkit-box-shadow: 0px 0px 15px 5px #e3e3e3;
-    // box-shadow: 0px 0px 15px 5px #e3e3e3;
+    img {
+      cursor: pointer;
+    }
 
-    // background-color: #e3e3e3e0;
-    // border: none;
-
-    // border-radius: 50%;
-
-    cursor: pointer;
-
-    // background-image: url(../../assets/images/Ellipse1.svg);
-    // background-size: cover;
+    @include respond(phone) {
+      width: 20%;
+      img {
+        height: 5rem;
+      }
+    }
   }
   &__pages {
     width: 33%;
@@ -38,6 +42,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
   &__wallet {
     width: 33%;
@@ -45,5 +53,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @include respond(phone) {
+      width: 70%;
+      justify-content: flex-start;
+    }
+
+    &_language {
+      @include respond(phone) {
+        display: none;
+      }
+    }
   }
 }

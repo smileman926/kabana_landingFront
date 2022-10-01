@@ -1,33 +1,32 @@
-.tripleCardArticle {
+.mobileTripleCardArticle {
   width: 100%;
   // min-height: 50rem;
-  height: 50rem;
+  // height: 20rem;
 
-  padding: 2rem 15rem;
+  padding: 2rem 6rem;
   margin: 5rem 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  // flex-direction: column;
 
   :nth-child(1) {
     img {
-      height: 25rem;
+      height: 12rem;
       z-index: 0;
     }
   }
   :nth-child(2) {
     img {
-      height: 30rem;
+      height: 15rem;
       z-index: 2;
-      padding-right: 5rem;
     }
   }
   :nth-child(3) {
     img {
-      height: 25rem;
+      height: 12rem;
       z-index: 0;
-      padding-right: 15rem;
     }
   }
 
@@ -36,15 +35,15 @@
   }
 
   &__image {
-    width: 17%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    // img {
-    //   height: 25rem;
-    // }
+    img {
+      height: 12rem;
+    }
 
     .flip_card {
       background-color: transparent;
@@ -87,7 +86,7 @@
     }
   }
   &__content {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;

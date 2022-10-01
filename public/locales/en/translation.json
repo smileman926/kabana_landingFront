@@ -17,5 +17,7 @@
   "mineDescription": "A smart contract that will issue tokens for each staked NFT mushroom, i.e. NFTs will work tirelessly for you and mine the game token.",
   "gamingSmartContract": "Gaming Smart Contract",
   "gamingSmartContractDescription": "to identify the winner and reward him takes 2 equal bets on itself, sends 90% of the winnings to the winner and burns 10% from circulation.  The ERC20 game token is created on the Polygon blockchain and has a limited supply without the possibility of a mint.",
-  "ourTeam": "OUR TEAM"
+  "ourTeam": "OUR TEAM",
+  "NFTMushroomNeeded:": "NFT mushroom needed:",
+  "NFTMushroomNeededDescription": "• to enter the club  \n • for mining  \n • for game(Hardcore mode)"
 }

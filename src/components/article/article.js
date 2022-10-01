@@ -1,14 +1,24 @@
 import classes from "./article.module.scss";
 
 const Article = (props) => {
-  const { image, backImage, title, content, direction } = props;
+  const { image, backImage, flip, title, content, direction } = props;
 
   return (
     <div className={classes.article} style={{ direction: direction }}>
       {image && (
         <div className={classes.article__image}>
-          <div className={classes.flip_card}>
-            <div className={classes.flip_card_inner}>
+          <div
+            className={
+              flip === false ? classes.flip_card_fixed : classes.flip_card
+            }
+          >
+            <div
+              className={
+                flip === false
+                  ? classes.flip_card_inner_fixed
+                  : classes.flip_card_inner
+              }
+            >
               <div className={classes.flip_card_front}>
                 <img src={image} alt="image1"></img>
               </div>

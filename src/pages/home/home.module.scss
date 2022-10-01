@@ -4,10 +4,6 @@
 .home {
   width: 100%;
 
-  // @include respond(phone) {
-  //   padding: 2rem 0;
-  // }
-
   &__cloud1 {
     position: absolute;
     width: 1292px;
@@ -16,7 +12,12 @@
     top: 53px;
 
     background: url(../../assets/images/cloud2.svg);
+
+    @include respond(phone) {
+      display: none;
+    }
   }
+
   &__cloud2 {
     position: absolute;
     // width: 1340px;
@@ -27,7 +28,11 @@
     top: 85px;
 
     background: url(../../assets/images/cloud3.svg);
+    // @include respond(phone) {
+    //   width: 20rem;
+    // }
   }
+
   &__cloud3 {
     position: absolute;
     width: 1428px;
@@ -36,7 +41,12 @@
     top: 33px;
 
     background: url(../../assets/images/cloud22.svg);
+
+    @include respond(phone) {
+      display: none;
+    }
   }
+
   &__cloud4 {
     position: absolute;
     width: 1277px;
@@ -47,15 +57,13 @@
     top: 57px;
 
     background: url(../../assets/images/cloud31.svg);
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__tunam1 {
-    // position: absolute;
-    // width: 1277px;
-    // height: 719px;
-    // right: 0;
-    // top: 57px;
-
     position: absolute;
     width: 100%;
     height: 32rem;
@@ -65,6 +73,11 @@
 
     background-image: url(../../assets/images/tunam1.png);
     background-size: cover;
+
+    @include respond(phone) {
+      height: 15rem;
+      margin-top: 30rem;
+    }
   }
 
   &__ellipse3 {
@@ -76,6 +89,10 @@
 
     background: rgba(69, 5, 91, 0.75);
     filter: blur(250px);
+
+    @include respond(phone) {
+      width: 400px;
+    }
   }
   &__ellipse4 {
     position: absolute;
@@ -93,12 +110,19 @@
   &__ellipse5 {
     position: absolute;
     width: 1225.36px;
-    height: 1780.81px;
-    top: 450rem;
+    height: 1550.81px;
+    top: 440rem;
 
     background: rgba(69, 5, 91, 0.75);
     filter: blur(250px);
     transform: matrix(-0.98, -0.18, -0.18, 0.98, 0, 0);
+
+    @include respond(phone) {
+      // display: none;
+      width: 300.36px;
+      height: 700.81px;
+      top: 380rem;
+    }
   }
 
   &__island1 {
@@ -112,6 +136,10 @@
 
     animation: float 6s ease-in-out infinite;
 
+    @include respond(phone) {
+      display: none;
+    }
+
     &_button {
       position: absolute;
       margin: 42rem 0 0 24rem;
@@ -122,8 +150,36 @@
       &:hover {
         transform: scale(1.05);
       }
+
+      @include respond(phone) {
+        margin: 20rem 0 0 0;
+
+        img {
+          max-height: 4rem !important;
+        }
+      }
     }
   }
+
+  &__island1Mobile {
+    display: none;
+
+    @include respond(phone) {
+      width: 100%;
+      position: absolute;
+      margin-top: 8rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      animation: float 6s ease-in-out infinite;
+      img {
+        max-height: 30rem;
+      }
+    }
+  }
+
   &__island2 {
     // width: 100%;
     position: absolute;
@@ -138,6 +194,17 @@
 
     animation: floatTwo 5s ease-in-out infinite;
 
+    @include respond(phone) {
+      width: 100%;
+
+      left: unset;
+      top: 75rem;
+
+      img {
+        max-height: 28rem;
+      }
+    }
+
     &_button {
       position: absolute;
       margin: 15rem 0 0 0;
@@ -147,6 +214,14 @@
       transition: transform 0.2s;
       &:hover {
         transform: scale(1.05);
+      }
+
+      @include respond(phone) {
+        margin: 12rem 0 0 0;
+
+        img {
+          max-height: 4rem;
+        }
       }
     }
   }
@@ -163,6 +238,18 @@
 
     animation: floatTwo 4s ease-in-out infinite;
 
+    @include respond(phone) {
+      // display: none;
+      width: 100%;
+      right: unset;
+
+      top: 40rem;
+
+      img {
+        max-height: 30rem;
+      }
+    }
+
     &_button {
       position: absolute;
       margin: 24rem 0 0 0;
@@ -170,6 +257,15 @@
       cursor: pointer;
 
       transition: transform 0.2s;
+
+      @include respond(phone) {
+        margin: 20rem 0 0 0;
+
+        img {
+          max-height: 4rem;
+        }
+      }
+
       &:hover {
         transform: scale(1.05);
       }
@@ -180,5 +276,22 @@
     position: absolute;
     margin: 90rem 0 0 0;
     width: 100%;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__mobileArticles {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+
+      position: absolute;
+      margin: 90rem 0 0 0;
+      width: 100%;
+      // padding: 0 1.5rem;
+    }
   }
 }

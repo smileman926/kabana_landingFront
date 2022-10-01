@@ -1,0 +1,22 @@
+@import "../../UI/styles/mixins";
+
+.footer {
+  height: 20rem;
+  width: 100%;
+
+  padding: 0 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @include respond(phone) {
+    margin-top: 10rem;
+    padding: 0;
+    height: 10rem;
+
+    img {
+      max-height: 2rem;
+    }
+  }
+}

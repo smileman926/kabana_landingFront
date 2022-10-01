@@ -1,0 +1,53 @@
+@import "../../UI/styles/mixins";
+
+.ourTeam {
+  width: 100%;
+  height: 60rem;
+
+  padding: 2rem 15rem;
+  margin: 20rem 0;
+
+  background-color: var(--color-gray-2);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @include respond(phone) {
+    height: 30rem;
+    padding: 2rem 0;
+    margin: 10rem 0 0 0;
+  }
+
+  &__header {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0 5rem;
+
+    font-family: "Tuffy";
+    font-size: 4rem;
+    font-weight: 600;
+
+    @include respond(phone) {
+      font-size: 2.1rem;
+      justify-content: center;
+    }
+  }
+
+  &__cards {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+  }
+}
