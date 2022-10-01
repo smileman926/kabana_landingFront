@@ -24,6 +24,9 @@ const TopNav = () => {
         <Button>{t("home")}</Button>
         <Button>{t("docs")}</Button>
         <Button>{t("team")}</Button>
+        <Button>
+          <p className={classes.mint}>MINT</p>
+        </Button>
       </div>
       <div className={classes.topNav__wallet}>
         {/* <WalletButton>CONNECT WALLET</WalletButton> */}

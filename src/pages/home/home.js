@@ -5,7 +5,7 @@ import islandkc1MobileImg from "../../assets/images/islandKC1.png";
 import island2Img from "../../assets/images/island2.png";
 import island3Img from "../../assets/images/island3.png";
 
-import kabanaClubImg from "../../assets/images/kabanaClub.png";
+// import kabanaClubImg from "../../assets/images/kabanaClub.png";
 import mushroomsImg from "../../assets/images/mushrooms.png";
 import caveImg from "../../assets/images/cave.png";
 import caveMobileImg from "../../assets/images/caveMobile.png";

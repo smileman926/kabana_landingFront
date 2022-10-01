@@ -17,6 +17,12 @@
   src: local("Tuffy"), url(./UI/styles/fonts/Tuffy.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Acme-Regular";
+  src: local("Acme-Regular"),
+    url(./UI/styles/fonts/Acme-Regular.ttf) format("truetype");
+}
+
 *,
 *::before,
 *::after {
