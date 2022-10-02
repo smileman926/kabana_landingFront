@@ -15,17 +15,44 @@ const TopNav = () => {
     i18n.changeLanguage(lang);
   }
 
+  const scroll = (id) => {
+    const section = document.querySelector(id);
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const onMintClick = () => {
+    window.open("https://kabana.club/", "_blank");
+  };
+
   return (
     <div className={classes.topNav}>
-      <div className={classes.topNav__logo}>
+      <div className={classes.topNav__logo} id={"home-section"}>
         <img src={logoImg} alt="logo"></img>
       </div>
       <div className={classes.topNav__pages}>
-        <Button>{t("home")}</Button>
-        <Button>{t("docs")}</Button>
-        <Button>{t("team")}</Button>
-        <Button>
-          <p className={classes.mint}>MINT</p>
+        <Button
+          onClick={() => {
+            scroll("#home-section");
+          }}
+        >
+          {t("home")}
+        </Button>
+        <Button
+          onClick={() => {
+            scroll("#docs-section");
+          }}
+        >
+          {t("docs")}
+        </Button>
+        <Button
+          onClick={() => {
+            scroll("#team-section");
+          }}
+        >
+          {t("team")}
+        </Button>
+        <Button onClick={onMintClick} color={"darkred"}>
+          <p>MINT</p>
         </Button>
       </div>
       <div className={classes.topNav__wallet}>

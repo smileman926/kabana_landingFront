@@ -83,7 +83,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={classes.home__articles}>
+      <div className={classes.home__articles} id={"docs-section"}>
         <Article
           image={gifka1Gif}
           title={t("KabanaClub")}
@@ -140,7 +140,10 @@ const Home = () => {
       </div>
 
       <div className={classes.home__mobileArticles}>
-        <div className={classes.home__articles_mobileFooter}>
+        <div
+          className={classes.home__articles_mobileFooter}
+          id={"mobile-docs-section"}
+        >
           <Footer />
         </div>
 
@@ -197,7 +200,10 @@ const Home = () => {
 
         <OurTeam />
 
-        <div className={classes.home__articles_mobileFooter}>
+        <div
+          className={classes.home__articles_mobileFooter}
+          id="mobile-team-section"
+        >
           <Footer />
         </div>
       </div>

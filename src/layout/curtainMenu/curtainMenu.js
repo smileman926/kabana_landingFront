@@ -31,6 +31,11 @@ const CurtainMenu = (props) => {
     closeNav();
   };
 
+  const onMintClick = () => {
+    window.open("https://kabana.club/", "_blank");
+    closeNav();
+  };
+
   return (
     <Fragment>
       <div id="curtainNav" className={classes.overlay}>
@@ -42,52 +47,34 @@ const CurtainMenu = (props) => {
             <div className={classes.row} onClick={closeNav}>
               <CurtainMenuLink
                 title={t("home")}
-                iconAlt={"signUp"}
                 icon={homeSvg}
-                link={"/userInfo/accountInfo"}
+                scrollTo={"#home-section"}
               />
             </div>
             <div className={classes.row} onClick={closeNav}>
               <CurtainMenuLink
                 title={t("team")}
-                iconAlt={"signUp"}
                 icon={teamSvg}
-                link={"/userInfo/reports"}
+                scrollTo={"#mobile-team-section"}
               />
             </div>
             <div className={classes.row} onClick={closeNav}>
               <CurtainMenuLink
                 title={t("docs")}
-                iconAlt={"signUp"}
                 icon={docsSvg}
-                link={"/userInfo/requests"}
+                scrollTo={"#mobile-docs-section"}
               />
             </div>
             <div className={classes.row} onClick={closeNav}>
-              <CurtainMenuLink
-                title={t("contact")}
-                iconAlt={"signUp"}
-                icon={messageSvg}
-                link={"/userInfo/operations"}
-              />
+              <CurtainMenuLink title={t("contact")} icon={messageSvg} />
             </div>
 
             <div className={classes.row} onClick={closeNav}>
-              <CurtainMenuLink
-                title={"DISCORD"}
-                iconAlt={"signUp"}
-                icon={discSvg}
-                link={"/userInfo/setting"}
-              />
+              <CurtainMenuLink title={"DISCORD"} icon={discSvg} />
             </div>
 
-            <div className={classes.row} onClick={closeNav}>
-              <CurtainMenuLink
-                title={"MINT"}
-                // iconAlt={"signUp"}
-                // icon={discSvg}
-                link={"/userInfo/setting"}
-              />
+            <div className={classes.row} onClick={onMintClick}>
+              <CurtainMenuLink title={"MINT"} />
             </div>
 
             <div className={classes.hr}></div>
@@ -96,34 +83,19 @@ const CurtainMenu = (props) => {
               className={classes.row}
               onClick={() => onChangeLangClick("en")}
             >
-              <CurtainMenuLink
-                title={"English"}
-                // iconAlt={"signUp"}
-                // icon={discSvg}
-                link={"/userInfo/setting"}
-              />
+              <CurtainMenuLink title={"English"} />
             </div>
             <div
               className={classes.row}
               onClick={() => onChangeLangClick("du")}
             >
-              <CurtainMenuLink
-                title={"Deutsch"}
-                // iconAlt={"signUp"}
-                // icon={discSvg}
-                link={"/userInfo/setting"}
-              />
+              <CurtainMenuLink title={"Deutsch"} />
             </div>
             <div
               className={classes.row}
               onClick={() => onChangeLangClick("ru")}
             >
-              <CurtainMenuLink
-                title={"Русский"}
-                // iconAlt={"signUp"}
-                // icon={discSvg}
-                link={"/userInfo/setting"}
-              />
+              <CurtainMenuLink title={"Русский"} />
             </div>
           </div>
         </div>

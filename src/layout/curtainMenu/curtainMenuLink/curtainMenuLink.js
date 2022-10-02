@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import classes from "./curtainMenuLink.module.scss";
 
 const CurtainMenuLink = (props) => {
-  const { icon, title, link, iconAlt } = props;
+  const { icon, title, iconAlt, scrollTo } = props;
+
+  const scroll = () => {
+    if (scrollTo) {
+      const section = document.querySelector(scrollTo);
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
-    <Link to={link} className={classes.link}>
+    <div className={classes.link} onClick={scroll}>
       <div className={classes.container}>
         <div className={classes.container__detail}>
           {icon && <img src={icon} alt="hamburger-link"></img>}
@@ -13,7 +20,7 @@ const CurtainMenuLink = (props) => {
           {title}
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 

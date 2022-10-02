@@ -16,7 +16,7 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className={classes.ourTeam}>
+    <div className={classes.ourTeam} id={"team-section"}>
       <div className={classes.ourTeam__header}>{t("ourTeam")}</div>
 
       <div className={classes.ourTeam__cards}>
